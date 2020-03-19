@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+
+.columna {
+    width: 45%;
+    padding: 10px;
+    border: 2px solid violet;
+  }
+
+#uno{
+    float: left;
+    
+}
+
+#dos{
+    overflow: hidden;
+}
+
+#tres{
+    float: left;
+    
+}
+
+#cuatro{
+    overflow: hidden;
+}
+.fila{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+div{
+    padding: 10px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+  }
+
+nav{
+    background-color: orange;
+}

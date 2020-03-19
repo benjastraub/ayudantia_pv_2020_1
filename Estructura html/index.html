@@ -1,0 +1,87 @@
+<!-- Definimos el tipo de documento -->
+<!DOCTYPE html>
+<!-- Iniciamos el html -->
+<html lang="es"> <!-- Definimos el idioma de la página, aunque no es obligatorio -->
+<!-- Inicio head -->
+<head>
+    <!-- El encoding UTF-8 nos permite usar tildes, la ñ y en general todo el alfabeto que vamos a necesitar -->
+    <meta charset="UTF-8">
+    <!-- Lo que pongamos en title es lo que aoarecerá arriba en nuestro navegador -->
+    <title>Estructura HTML</title>
+    <!-- Esto hace referencia al CSS y nos permite cambiar cómo se ve la página -->
+    <!-- Esto se verá la otra semana pero se agregó para evidenciar el uso de los divs -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Inicio body -->
+<body>
+    <!-- Iniciamos el nav. Acá van los "botones" que nos llevan a otras partes del sitio web -->
+    <nav>
+        <!-- Usamos una unorder list <ul> y cada item <li> está en una referencia <a> -->
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="proyectos.html"><li>Proyectos</li></a>
+            <a href="contacto.html"><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <!-- Título de nuestra página web -->
+    <h1>Estructura HTML</h1>
+    <!-- Agregamos texto -->
+    <p>Los bordes violetan delimitan el div de las columnas y los azules los div de las filas. El fondo naranja indica el nav y el verde limón indica el footer</p>
+    <p>En los archivos no se preocupen por styles.css. Eso lo veremos la otra semana. Ahora sólo se usó para que se notara el uso de divs</p>
+    <!-- En este ejemplo usaremos div para hacer dos columnas. Una de estás estará dividida en dos -->
+    <!-- Columna 1 -->
+    <div class="columna" id="uno">
+        <!-- Fila 1 -->
+        <div class="fila">
+            <!-- Agregamos un párrafo -->
+            <p>Este div está arriba a la izquierda. Abajo mío abrá una imagen y en toda la coolumna derecha habrá otro texto</p>
+        </div>
+        <!-- Fila 2 -->
+        <div class="fila">
+            <!-- src es la ruta a la imagen y alt es el texto descriptivo de la imagen (por si no se carga o el usuario ocupa un lector de pantallas) -->
+            <img src="aslan.jpg" alt="Perro en piscina" width="100%">
+        </div>
+    </div>
+    <!-- Columna 2 -->
+    <div class="columna" id="dos">
+        <!-- Usamos h2 para el título de esta sección -->
+        <h2>Lista de compras</h2>
+        <!-- Fila 3 -->
+        <div class="fila">
+            <ol>
+                <li>azúcar</li>
+                <li>sal</li>
+                <li>arroz</li>
+                <li>harina</li>
+                <li>fideos</li>
+                <li>leche</li>
+                <li>huevo</li>
+                <li>pimentón</li>
+                <li>tomate</li>
+                <li>lechuga</li>
+                <li>cebolla</li>
+                <li>ajo</li>
+                <li>queso</li>
+            </ol>
+        </div>
+        <!-- Fila 4 -->
+        <div class="fila">
+            <!-- Columna 3 -->
+            <div class="columna" id="tres">
+                <p>Soy una columna dentro de una fila dentro de una columna</p>
+            </div>
+            <!-- Columna 4 -->
+            <div class="columna" id="tres">
+                <p>Estoy chiquito</p>
+                <img src="aslan2.jpg" alt="Perro con pelota" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio footer -->
+    <div class="footer">
+        <p align="center">Este es un footer y está centrado gracias al atributo align</p>
+    </div>
+</body>
+</html>
